@@ -1,0 +1,170 @@
+/* font family */
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+/* declare variable */
+:root {
+    --primary-color: #FF5400;
+    --secondary-color: #131318;
+    --common-color: #131318b3;
+}
+
+/* shared styles */
+
+* {
+    font-family: "Mulish", sans-serif;
+}
+
+body {
+    padding-left: 135px;
+    padding-right: 135px;
+}
+
+/* header styles */
+
+/* nav styles */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title-section {
+    display: flex;
+    align-items: center;
+}
+
+.title {
+    color: var(--secondary-color);
+    font-weight: 800;
+    font-size: 2.25rem;
+    margin-left: 1rem;
+}
+
+.title-section .travel-style {
+    color: var(--primary-color);
+}
+
+.menu-icon {
+    display: none;
+}
+
+.menu-section>ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    gap: 44px;
+}
+
+.menu-section li a {
+    text-decoration: none;
+    color: #424247;
+    font-weight: 400;
+    font-size: 1.13rem;
+}
+
+.menu-section li a:hover {
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+/* banner styes */
+
+.banner {
+    background-image: linear-gradient(180deg, rgba(19, 19, 24, 0.8) 0%, rgba(19, 19, 24, 0) 100%), url("../images/Group13.png");
+    border-radius: 16px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-details {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    margin-left: 180px;
+    margin-right: 180px;
+}
+
+.banner-title {
+    color: #FFFFFF;
+    font-weight: 800;
+    font-size: 64px;
+    margin-top: 0;
+    margin-bottom: 24px;
+}
+
+.banner-description {
+    color: #FFFFFF;
+    font-weight: 400;
+    font-size: 1rem;
+    max-width: 676px;
+    margin-bottom: 0;
+}
+
+.find-now {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    height: 84px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 24px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-top: 48px;
+}
+
+.find-now input{
+    background: #FFFFFF;
+    border-radius: 8px;
+    border: 0;
+    max-width: 174px;
+    padding: 16px;
+    color: rgba(19, 19, 24, 0.5);
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.find-now input:focus{
+    outline: none;
+}
+
+.find-now-btn {
+    color: #FFFFFF;
+    width: 174px;
+    height: 52px;
+    font-weight: 700;
+    font-size: 16px;
+    background: #FF5400;
+    border-radius: 8px;
+    border: 0;
+}
+
+
+/* responsive section */
+
+@media screen and (max-width:600px) {
+
+    body {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .menu-section {
+        display: none;
+    }
+
+    .menu-icon {
+        display: inline;
+    }
+}
